@@ -322,13 +322,119 @@ H6 is the least priority heading</p>
     <br>
     they represent, improving accessibility, SEO (Search Engine Optimization), and code readability. <br>
     example: &lt;header&gt; &lt;/header&gt; <br>
-    &lt;form&gt;&lt;/form&gt;</p>
+    &lt;form&gt;&lt;/form&gt;
+  </p>
 
   <h3>Question:32 What is an image map?</h3>
   <p>
-    An image map is an HTML technique that allows you to create clickable areas on an image, where different regions of <br>
-    the image can link to different destinations. Instead of having one large clickable image, you can define multiple <br>
-    "hotspots" or clickable areas within the image, each linking to different URLs or sections of the page.</p>
+    An image map is an HTML technique that allows you to create clickable areas on an image, where different regions of
+    <br>
+    the image can link to different destinations. Instead of having one large clickable image, you can define multiple
+    <br>
+    "hotspots" or clickable areas within the image, each linking to different URLs or sections of the page.
+  </p>
+  <h3>Question:33 How to insert a copyright symbol on a browser page?</h3>
+  <p>we can insert a cpoyright symbol using & copy entity presenet in html </p>
+  <code>&lt;p&gt; &lt;&copy;&gt; 2025 Your Company. All Rights Reserved.&lt;/p&gt;
+    </code>
+  <h3>Question:34 How to create a nested webpage in HTML?</h3>
+  <p>To create a nested webpage in HTML, you simply need to structure your HTML files so that one page can link to <br>
+    another or even include other HTML documents as parts of the current page. There are two main ways to create nested
+    <br>
+    web pages: <br>
+
+    &lt;a href="page2.html"&gt;Go to Page 2&lt;/a&gt; <br>
+  </p>
+  <h5>Using iframe</h5>
+  &lt;h1&gt;Main Page with an Embedded Page&lt;/h1&gt; <br>
+  &lt;iframe src="page2.html" width="600" height="400"&gt;&lt;/iframe&gt; <br>
+  <h3>Question:35 What is use of Iframe tag. and How to create Iframe tag</h3>
+  <p>
+    The iframe tag in HTML is used to embed another HTML document (or webpage) within the current webpage. <br>
+    Essentially, it allows you to display content from another source inside a section of your web page, without <br>
+    having to leave the current page.
+    Use Cases for &lt;iframe&gt;:
+    <li>Embedding videos (e.g., YouTube or Vimeo).</li>
+    <li>Embedding external web pages (e.g., embedding a Google Map or a weather widget).</li>
+    <li>Showing third-party content, like advertisements, in a specific part of the page.</li>
+    <li>Loading a different website without navigating away from the current page.</li>
+    <br>
+    syntax: <br>
+    &lt;iframe src="URL" width="width" height="height" title="description"&gt;&lt;/iframe&gt;
+
+  </p>
+  <h3>Question:36 In Iframe Which attributes are more impontant?</h3>
+  <p>In Iframe Source attribute is most important and other attribute like height <br>
+    and width is also important <br>
+    &lt;iframe src="https://www.example.com"&gt;&lt;/iframe&gt; <br>
+    &lt;iframe src="https://www.example.com" width="800" height="600"&gt;&lt;/iframe&gt;
+  </p>
+  <h3>Question:37 Does a hyperlink only apply to text?</h3>
+  <p>A hyperlink in HTML does not only apply to text; it can be used with other HTML elements as well. While text is the
+    <br>
+    most common element for hyperlinks, you can wrap other elements like images, buttons, or even entire sections
+    (e.g.,a <br>
+    &lt;di&gt; or &lt;p&gt; tag) within the &lt;a&gt; tag to make them clickable. For instance, you can use a hyperlink
+    to make an image, a <br>
+    button, or a section of content lead to a different page, just like you would with text. The hyperlink is <br>
+    created using the &lt;a&gt; tag with the href attribute, which defines the destination URL.
+  </p>
+
+  <h3>Question:38 What is a style sheet?</h3>
+  <p>A style sheet in web development refers to a file that defines the visual presentation and layout of HTML elements
+    <br>
+    on a webpage. It contains a set of rules that specify how the content of the page (such as text, images, and other
+    <br>
+    HTML elements) should be displayed in terms of colors, fonts, spacing, positioning, and more. The most common type
+    <br>
+    of style sheet used in web development is CSS (Cascading Style Sheets).
+  </p>
+  <h3>Question:39 Can you create a multi-colored text on a web page?</h3>
+  <p>Yes, you can create multi-colored text on a web page using CSS (Cascading Style Sheets). One way to achieve this is
+    <br>
+    by applying different colors to parts of the text using either inline CSS or by styling individual elements like
+    <br>
+    <span> tags.
+  </p>
+  <h3>Question:40 Is it possible to change the color of the bullet?</h3>
+  <p>Yes, it is possible to change the color of the bullet points in a list using CSS! However, CSS does not provide a
+    <br>
+    direct property to change the bullet color. Instead, you can use list-style-type for customizing the bullet <br>
+    appearance and color property to change its color indirectly. <br>
+
+  </p>
+  <h3>Question:41 Explain the layout of HTML?</h3>
+  <p>The layout of an HTML document typically consists of a &lt;!DOCTYPE html&gt; declaration, followed by the <br>
+    &lt;html&gt; element, which wraps all the content on the page. Inside the &lt;html&gt; element, the &lt;head&gt;<br>
+    section contains metadata, including the document's title, character encoding, and links to external files like CSS
+    <br>
+    or JavaScript. The &lt;body&gt; section holds the visible content of the page, such as text, images, and links. <br>
+    Inside the body, there are common structural elements like &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, <br>
+    &lt;main&gt;, &lt;section&gt;, and &lt;article&gt; that organize and structure the content. The body section is <br>
+    where the actual webpage content resides and is styled using CSS and enhanced with interactivity using JavaScript.
+  </p>
+  <h3>Question:42 What is a marquee?</h3>
+  <p>
+    A marquee in HTML is a tag used to create a scrolling or moving text or image across the screen. The content inside
+    <br>
+    the&lt;marquee&gt; tag can move either horizontally or vertically. However, the&lt;marquee&gt; tag is considered
+    obsolete in <br>
+    HTML5, and it's not recommended for use in modern web development because it’s not accessible and can negatively
+    <br>
+    impact user experience.
+
+    The&lt;marquee&gt; element allows you to control the direction, speed, and behavior of the scrolling content through
+    <br>
+    attributes such as direction, scrollamount, behavior, and loop.</p>
+  <h3>Question:43 How to make a picture of a background image of a web page?</h3>
+  <p>To set a background image using only HTML, you would need to rely on the
+
+    <body> tag's background attribute. However, it's important to note that this method is outdated and not recommended <br>
+      for modern web development. It was used in earlier HTML versions before CSS became the standard for styling. <br>
+      &lt;body background="path/to/your-image.jpg"&gt; <br>
+      &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt; <br>
+      &lt;p&gt;This is a page with a background image set using HTML.&lt;/p&gt; 
+    </p>
 </body>
 
 
